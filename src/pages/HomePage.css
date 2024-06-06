@@ -1,0 +1,107 @@
+.homepage-title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-top: 100px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.homepage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-image: url('/src/components/images/paws.jpg'); 
+  margin-bottom: 50px;
+  margin-top: 20px;
+  border-color: #f0f0e1;
+}
+
+.homepage-item {
+  position: relative;
+  width: 30%;
+  max-width: 200px; 
+  cursor: pointer;
+}
+
+.homepage-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; 
+  transition: transform 0.3s;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover; 
+}
+
+.homepage-image:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  width: 90%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow-title {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.slideshow {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 20px;
+}
+
+.slideshow-card {
+  min-width: 200px;
+  max-width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  scroll-snap-align: start;
+}
+
+.slideshow-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.slideshow-card h2 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
+.slideshow-card p {
+  margin: 5px 0;
+}
